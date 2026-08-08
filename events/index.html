@@ -1,1 +1,53 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Events — TDF Events</title><link rel="stylesheet" href="../assets/css/style.css"></head><body><header class="site-header"><a class="brand" href="/"><img src="../assets/images/tdf-logo.png" alt="TDF Diamond Family"><span>Events</span></a><nav><a class="active" href="/events/">Events</a><a href="/account/">My account</a></nav></header><main class="page"><div class="page-intro"><p class="eyebrow">WHAT'S ON</p><h1>Find your next<br><em>good day out.</em></h1><p>Fresh events, memorable people, no endless group chats.</p><p><a class="small-button" href="/events/past/">Past events →</a></p></div><div id="event-list" class="event-grid"><div class="loading">Finding upcoming events…</div></div></main><footer>© <span id="year"></span> TDF Events</footer><script type="module" src="../assets/js/events.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Events — TDF Events</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="brand" href="/">
+      <img src="../assets/images/tdf-logo.png" alt="TDF Diamond Family">
+      <span>Events</span>
+    </a>
+
+    <nav>
+      <a class="active" href="/events/">Events</a>
+      <a href="/account/">My account</a>
+
+      <!-- Only visible to administrators -->
+      <a id="admin-past-events-link" href="/events/past/" class="hidden">
+        Past Events
+      </a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <div class="page-intro">
+      <p class="eyebrow">WHAT'S ON</p>
+
+      <h1>
+        Find your next<br>
+        <em>good day out.</em>
+      </h1>
+
+      <p>
+        Fresh events, memorable people, no endless group chats.
+      </p>
+    </div>
+
+    <div id="event-list" class="event-grid">
+      <div class="loading">Finding upcoming events…</div>
+    </div>
+  </main>
+
+  <footer>
+    © <span id="year"></span> TDF Events
+  </footer>
+
+  <script type="module" src="../assets/js/events.js"></script>
+</body>
+</html>
